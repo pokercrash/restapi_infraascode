@@ -18,15 +18,17 @@ The system exposes a single CRUD resource: **`note`**.
 
 ### High-Level Diagram
 Client
-|
-| HTTPS
-v
+
+↓ HTTPS
+
 Application Load Balancer
-|
-v
+
+↓
+
 ECS Fargate (ASP.NET Core API)
-|
-v
+
+↓
+
 DynamoDB (Notes table)
 
 ---
