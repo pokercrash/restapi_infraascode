@@ -18,11 +18,15 @@ The system exposes a single CRUD resource: **`note`**.
 
 ### High-Level Diagram
 Client
-↓ HTTPS
+|
+| HTTPS
+v
 Application Load Balancer
-↓
+|
+v
 ECS Fargate (ASP.NET Core API)
-↓
+|
+v
 DynamoDB (Notes table)
 
 ---
@@ -64,12 +68,12 @@ DynamoDB (Notes table)
 
 Terraform is split into focused modules:
 
-modules/
-├── network # VPC, subnets, internet gateway
-├── compute # ECS, ALB, task definitions
-├── storage # DynamoDB
-├── iam # Roles and least-privilege policies
-└── logging # CloudWatch log groups
+## Module Descriptions
+- **network**: Contains VPC, subnets, and internet gateway configurations.
+- **compute**: Defines ECS clusters, ALBs, and task definitions.
+- **storage**: Manages DynamoDB tables.
+- **iam**: Implements IAM roles and least-privilege policies.
+- **logging**: Sets up CloudWatch log groups.
 
 ### Key Principles
 - No hardcoded ARNs or credentials
