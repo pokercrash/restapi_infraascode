@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "dgSpecHash": "xZnwJbO9S/w=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ngjun\\.nuget\\packages\\awssdk.core\\4.0.3.6\\awssdk.core.4.0.3.6.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\awssdk.dynamodbv2\\4.0.10.4\\awssdk.dynamodbv2.4.0.10.4.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\awssdk.extensions.netcore.setup\\4.0.3.17\\awssdk.extensions.netcore.setup.4.0.3.17.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.1\\microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.1\\microsoft.entityframeworkcore.10.0.1.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.1\\microsoft.entityframeworkcore.abstractions.10.0.1.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.1\\microsoft.entityframeworkcore.analyzers.10.0.1.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\10.0.1\\microsoft.entityframeworkcore.inmemory.10.0.1.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\microsoft.extensions.apidescription.server\\10.0.0\\microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\10.0.1\\microsoft.extensions.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\microsoft.extensions.logging\\10.0.1\\microsoft.extensions.logging.10.0.1.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\microsoft.openapi\\2.3.0\\microsoft.openapi.2.3.0.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\swashbuckle.aspnetcore\\10.0.1\\swashbuckle.aspnetcore.10.0.1.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\10.0.1\\swashbuckle.aspnetcore.swagger.10.0.1.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\10.0.1\\swashbuckle.aspnetcore.swaggergen.10.0.1.nupkg.sha512",
+    "C:\\Users\\ngjun\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\10.0.1\\swashbuckle.aspnetcore.swaggerui.10.0.1.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.Extensions.DependencyInjection will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+      "libraryId": "Microsoft.Extensions.DependencyInjection",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference Microsoft.Extensions.Logging will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
+      "projectPath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+      "libraryId": "Microsoft.Extensions.Logging",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

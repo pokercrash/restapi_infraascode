@@ -1,0 +1,85 @@
+stages:
+  - validate
+  - build
+  - plan
+  - deploy
+
+default:
+  image: hashicorp/terraform:1.6
+  before_script:
+    - terraform --version
+
+variables:
+  TF_ROOT: "terraform/environments/dev"
+  TF_IN_AUTOMATION: "true"
+  TF_INPUT: "false"
+
+########################
+# Terraform Validate
+########################
+terraform:validate:
+  stage: validate
+  script:
+    - cd $TF_ROOT
+    - terraform init -backend=false
+    - terraform fmt -check -recursive
+    - terraform validate
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH
+
+########################
+# Build .NET API Image
+########################
+docker:build:
+  stage: build
+  image: docker:25
+  services:
+    - docker:25-dind
+  variables:
+    DOCKER_TLS_CERTDIR: ""
+  script:
+    - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" "$CI_REGISTRY"
+    - docker build -t "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA" .
+    - docker push "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA"
+  artifacts:
+    reports:
+      dotenv: build.env
+  after_script:
+    - echo "IMAGE_URI=$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA" >> build.env
+
+########################
+# Terraform Plan
+########################
+terraform:plan:
+  stage: plan
+  needs:
+    - job: docker:build
+      artifacts: true
+  script:
+    - cd $TF_ROOT
+    - terraform init
+    - terraform plan -out=tfplan \
+        -var="image_uri=$IMAGE_URI"
+  artifacts:
+    paths:
+      - $TF_ROOT/tfplan
+    expire_in: 7 days
+  rules:
+    - if: $CI_COMMIT_BRANCH
+
+########################
+# Terraform Apply (Manual)
+########################
+terraform:apply:
+  stage: deploy
+  needs:
+    - terraform:plan
+  script:
+    - cd $TF_ROOT
+    - terraform init
+    - terraform apply tfplan
+  when: manual
+  allow_failure: false
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
