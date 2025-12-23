@@ -116,6 +116,18 @@
           }
         }
       }
+    },
+    "/health": {
+      "get": {
+        "tags": [
+          "NoteApplication"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
@@ -147,6 +159,9 @@
   "tags": [
     {
       "name": "Note"
+    },
+    {
+      "name": "NoteApplication"
     }
   ]
 }

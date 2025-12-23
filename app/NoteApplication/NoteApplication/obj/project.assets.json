@@ -843,11 +843,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+      "projectUniqueName": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
       "projectName": "NoteApplication",
-      "projectPath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+      "projectPath": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
       "packagesPath": "C:\\Users\\ngjun\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\obj\\",
+      "outputPath": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Programs\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -6,3 +6,8 @@ variable "image_uri" {
   type        = string
   description = "Container image URI pushed by CI"
 }
+
+variable "aws_region" {
+  type    = string
+  default = "ap-southeast-1"
+}

@@ -20,6 +20,24 @@ resource "aws_security_group" "alb" {
   }
 }
 
+resource "aws_security_group" "ecs" {
+  vpc_id = var.vpc_id
+
+  ingress {
+    from_port       = 80
+    to_port         = 80
+    protocol        = "tcp"
+    security_groups = [aws_security_group.alb.id]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+}
+
 resource "aws_lb" "this" {
   load_balancer_type = "application"
   subnets            = var.public_subnets
@@ -29,8 +47,17 @@ resource "aws_lb" "this" {
 resource "aws_lb_target_group" "this" {
   port        = 80
   protocol    = "HTTP"
-  vpc_id     = var.vpc_id
+  vpc_id      = var.vpc_id
   target_type = "ip"
+
+  health_check {
+    path                = "/health" 
+    matcher             = "200-299" 
+    interval            = 30        
+    timeout             = 5         
+    healthy_threshold   = 2         
+    unhealthy_threshold = 3
+  }
 }
 
 resource "aws_lb_listener" "http" {
@@ -54,11 +81,18 @@ resource "aws_ecs_task_definition" "this" {
   task_role_arn            = var.ecs_task_role_arn
 
   container_definitions = jsonencode([{
-    name  = "api"
-    image = var.image_uri
-    portMappings = [{
+    name         = "api"
+    image        = var.image_uri
+    portMappings = [{ 
       containerPort = 80
+      protocol      = "tcp"
     }]
+    environment = [
+      {
+        name  = "ASPNETCORE_URLS"
+        value = "http://+:80"
+      }
+    ]
     logConfiguration = {
       logDriver = "awslogs"
       options = {
@@ -78,9 +112,9 @@ resource "aws_ecs_service" "this" {
   launch_type     = "FARGATE"
 
   network_configuration {
-    subnets         = var.private_subnets
-    assign_public_ip = false
-    security_groups = [aws_security_group.alb.id]
+    subnets          = var.public_subnets
+    assign_public_ip = true
+    security_groups  = [aws_security_group.ecs.id]
   }
 
   load_balancer {
@@ -88,4 +122,6 @@ resource "aws_ecs_service" "this" {
     container_name   = "api"
     container_port   = 80
   }
+
+  depends_on = [aws_lb_listener.http]
 }

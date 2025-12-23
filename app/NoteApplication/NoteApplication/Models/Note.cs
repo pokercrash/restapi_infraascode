@@ -5,7 +5,7 @@ namespace NoteApplication.Models
     [DynamoDBTable("notes")]
     public class Note
     {
-        [DynamoDBHashKey]
+        [DynamoDBHashKey("id")]
         public string Id { get; set; } = Guid.NewGuid().ToString();
 
         public string Title { get; set; } = string.Empty;

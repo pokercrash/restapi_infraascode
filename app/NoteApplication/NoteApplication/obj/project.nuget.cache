@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xZnwJbO9S/w=",
+  "dgSpecHash": "bSVUvapT+SY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+  "projectFilePath": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ngjun\\.nuget\\packages\\awssdk.core\\4.0.3.6\\awssdk.core.4.0.3.6.nupkg.sha512",
     "C:\\Users\\ngjun\\.nuget\\packages\\awssdk.dynamodbv2\\4.0.10.4\\awssdk.dynamodbv2.4.0.10.4.nupkg.sha512",
@@ -26,9 +26,9 @@
       "code": "NU1510",
       "level": "Warning",
       "message": "PackageReference Microsoft.Extensions.DependencyInjection will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+      "projectPath": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+      "filePath": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
       "libraryId": "Microsoft.Extensions.DependencyInjection",
       "targetGraphs": [
         "net10.0"
@@ -38,9 +38,9 @@
       "code": "NU1510",
       "level": "Warning",
       "message": "PackageReference Microsoft.Extensions.Logging will not be pruned. Consider removing this package from your dependencies, as it is likely unnecessary.",
-      "projectPath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+      "projectPath": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
       "warningLevel": 1,
-      "filePath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
+      "filePath": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\NoteApplication.csproj",
       "libraryId": "Microsoft.Extensions.Logging",
       "targetGraphs": [
         "net10.0"

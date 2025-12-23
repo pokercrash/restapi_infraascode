@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\",
+  "WorkspaceRootPath": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DE1B308F-C8FD-446F-AA6C-326E710A904C}|NoteApplication\\NoteApplication.csproj|c:\\users\\ngjun\\desktop\\folder\\restapi_infraascode\\app\\noteapplication\\noteapplication\\services\\notesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE1B308F-C8FD-446F-AA6C-326E710A904C}|NoteApplication\\NoteApplication.csproj|solutionrelative:noteapplication\\services\\notesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1994831-8A66-27CD-13DC-A3A4BA7093FF}|NoteApplication\\NoteApplication.csproj|c:\\users\\ngjun\\desktop\\gitl\\app\\noteapplication\\noteapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1994831-8A66-27CD-13DC-A3A4BA7093FF}|NoteApplication\\NoteApplication.csproj|solutionrelative:noteapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE1B308F-C8FD-446F-AA6C-326E710A904C}|NoteApplication\\NoteApplication.csproj|c:\\users\\ngjun\\desktop\\folder\\restapi_infraascode\\app\\noteapplication\\noteapplication\\controllers\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE1B308F-C8FD-446F-AA6C-326E710A904C}|NoteApplication\\NoteApplication.csproj|solutionrelative:noteapplication\\controllers\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1994831-8A66-27CD-13DC-A3A4BA7093FF}|NoteApplication\\NoteApplication.csproj|c:\\users\\ngjun\\desktop\\gitl\\app\\noteapplication\\noteapplication\\controllers\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1994831-8A66-27CD-13DC-A3A4BA7093FF}|NoteApplication\\NoteApplication.csproj|solutionrelative:noteapplication\\controllers\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NotesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\Services\\NotesRepository.cs",
-              "RelativeDocumentMoniker": "NoteApplication\\Services\\NotesRepository.cs",
-              "ToolTip": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\Services\\NotesRepository.cs",
-              "RelativeToolTip": "NoteApplication\\Services\\NotesRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\Program.cs",
+              "RelativeDocumentMoniker": "NoteApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\Program.cs",
+              "RelativeToolTip": "NoteApplication\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T07:28:54.686Z",
+              "WhenOpened": "2025-12-21T15:06:43.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "NoteController.cs",
-              "DocumentMoniker": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\Controllers\\NoteController.cs",
+              "DocumentMoniker": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\Controllers\\NoteController.cs",
               "RelativeDocumentMoniker": "NoteApplication\\Controllers\\NoteController.cs",
-              "ToolTip": "C:\\Users\\ngjun\\Desktop\\Folder\\restapi_infraascode\\app\\NoteApplication\\NoteApplication\\Controllers\\NoteController.cs",
+              "ToolTip": "C:\\Users\\ngjun\\Desktop\\GitL\\app\\NoteApplication\\NoteApplication\\Controllers\\NoteController.cs",
               "RelativeToolTip": "NoteApplication\\Controllers\\NoteController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCEAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwCYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-19T07:27:22.278Z",
+              "WhenOpened": "2025-12-21T15:05:30.847Z",
               "EditorCaption": ""
             }
           ]
